@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  width: 50%;
+  height: 100px;
+  background-color: #818cf8;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+.roboto {
+  font-family: "Roboto Serif", serif;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.violet {
+  color: #818cf8;
+}
+.text-sec {
+  color: #1c1c1c;
+}
+.red {
+  color: #d12d21;
+}
+.bg-cream {
+  background-color: #feefdd;
+}
+.bg-utility {
+  background-color: #1c1c1c;
+}
+.bg-transparent {
+  background: transparent !important;
+}
+.login {
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.login span {
+  position: relative;
+  z-index: 2;
+}
+
+.login:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #d12d21;
+  transition: all 0.35s;
+}
+
+.login:hover {
+  color: #fff;
+}
+
+.login:hover:after {
+  width: 100%;
+}
