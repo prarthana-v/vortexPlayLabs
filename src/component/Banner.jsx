@@ -8,9 +8,11 @@ const Banner = () => {
     <>
 
       <div className='bg-banner h-[35rem]'>
-        <Header />
-        <div className="col-12 flex justify-center mt-40">
-          <div className="col-7 flex justify-center relative z-50 ">
+        <div className='z-50'>
+          <Header />
+        </div>
+        <div className="col-12 flex justify-center mt-24 sm:mt-36 lg:mt-40">
+          <div className="col-11 col-lg-7 flex justify-center relative z-40 ">
             <TypingEffect />
           </div>
         </div>

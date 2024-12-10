@@ -40,7 +40,7 @@ const TypingEffect = () => {
   }, [charIndex, isTyping, textArray, textArrayIndex, typingDelay, erasingDelay, newTextDelay]);
 
   return (
-    <p className="effect text-white text-center text-7xl font-semibold" style={{ lineHeight: '90px' }}>
+    <p className="effect text-white text-center text-4xl sm:text-5xl lg:text-7xl font-semibold poppins" style={{ lineHeight: '70px' }}>
       Your Gateway to Digital  <span className="text-red-500 font-semibold bg-blur"> Innovation {currentText}</span>
       <span className={`cursor ${isTyping ? "typing" : ""}`}>&nbsp;</span>
     </p>
